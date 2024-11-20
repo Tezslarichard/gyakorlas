@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Table</title>
+
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Vezeteknev</th>
+                <th colspan="2">keresztnev</th>
+                <th>Házas-e?</th>
+                <th>Állat</th>
+            </tr>
+        </thead>
+    
+        <tbody>  
+            <tr>
+                <td>Kocsis</td>
+                <td>Géza</td>
+                <td>Ferenc</td>
+                <td>igen</td>
+                <td>Ponyt</td>
+            </tr>
+            <tr>
+                <td>Horváth</td>
+                <td>Mária</td>
+                <td>Julia</td>
+                <td>Nem</td>
+                <td>Nyúl</td>
+            </tr>
+            <tr>
+                <td>Balogh</td>
+                <td colspan="2">Ferenc</td>
+                <td>igen</td>
+                <td>Kutya</td>
+            </tr>
+            <tr>
+                <td>Horváth</td>
+                <td>Gábor</td>
+                <td>Attila</td>
+                <td>Nem</td>
+                <td>Majom</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <form id="form" action="/">
+
+        <div class="field">
+
+            <label for="lastname">Vezetéknév</label>
+            <div class="error"></div>
+
+            <input name="lastname" id="lastname">
+
+        </div>
+
+        <div class="field">
+
+            <label for="firstname1">Keresztnév1</label>
+            <div class="error" readonly></div>
+
+            <input name="firstname1" id="firstname1">
+
+        </div>
+
+        <div class="field">
+
+            <label for="firstname2">Keresztnév2</label>
+            <div class="error" readonly></div>
+
+            <input name="firstname2" id="firstname2">
+
+        </div>
+
+        <div class="field">
+
+            <label for="married">Házas</label>
+            <div class="error" readonly></div>
+
+            <input name="married" id="married" type="checkbox">
+
+        </div>
+
+        <div class="field">
+
+            <label for="pet">Háziállat</label>
+
+            <select name="pet" id="pet">
+
+                <option value=""></option>
+
+                <option value="ponyt">ponyt</option>
+
+                <option value="Majom">Majom</option>
+
+                <option value="kutya">kutya</option>
+
+                <option value="Nyúl">Nyúl</option>
+
+            </select>
+
+        </div>
+
+        <button>Feltölt</button>
+
+    </form>
+    <script src="majomkodas.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+table thead th {
+    font-weight: bold;
+    
+    background-color: blueviolet;
+}
+tbody tr:nth-child(even) {
+    background-color: antiquewhite;
+}
+tbody tr:nth-child(odd) {
+    background-color: beige;
+}
+th, td {
+    border: 2px solid black;
+}
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+table tbody tr:hover {
+    background-color: aquamarine;
+}
+
+table tbody tr.selected{
+    transform: scale(1.2);
+}
